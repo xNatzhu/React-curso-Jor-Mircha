@@ -2,7 +2,21 @@ import React from "react"; //Hay que hacerle siempre la importancion aunque ahor
 import logo from './logo.svg';
 import './App.css';
 import Componente from "./components/Componente"; //aca hacemos llamar nuestro componente creado.
+import Propiedades from "./components/Propiedades";
 function App() {
+
+  //example de propiedades
+    const datosPersonas ={
+      name:"Pedro",
+      apellido:"Saravia",
+      edad:20,
+    }
+
+    /*Este ejemplo se basa de como puedo enviar datos de objetos a una propss*/
+  //----------------------
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -30,6 +44,14 @@ function App() {
           
           */
         }
+
+
+        
+        <hr></hr>
+        <Propiedades nombre="Agustin" />
+
+        <Propiedades {...datosPersonas}/> {/* Con el spreed opereitor lo que hago es invocar el objeto, para que ingrese en el parametro "props* y directamente desde el componente lo llame*/}
+      
       </section>
       
     </div>
