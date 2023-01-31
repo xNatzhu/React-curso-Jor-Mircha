@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Componente from "./components/Componente"; //aca hacemos llamar nuestro componente creado.
 import Propiedades from "./components/Propiedades";
+import States from "./components/state/States.js";
 function App() {
 
   //example de propiedades
@@ -53,6 +54,11 @@ function App() {
         <Propiedades {...datosPersonas}/> {/* Con el spreed opereitor lo que hago es invocar el objeto, para que ingrese en el parametro "props* y directamente desde el componente lo llame*/}
       
       </section>
+
+      <hr></hr>
+      <div>
+          <States/>
+      </div>
       
     </div>
   );
