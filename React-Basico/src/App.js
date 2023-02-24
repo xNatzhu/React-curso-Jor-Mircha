@@ -4,6 +4,8 @@ import './App.css';
 import Componente from "./components/Componente"; //aca hacemos llamar nuestro componente creado.
 import Propiedades from "./components/Propiedades";
 import States from "./components/state/States.js";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import RenderizadoElementos from "./components/RenderizadoElementos";
 function App() {
 
   //example de propiedades
@@ -58,6 +60,14 @@ function App() {
       <hr></hr>
       <div>
           <States/>
+      </div>
+
+      <div  className="App-component">
+        <RenderizadoCondicional/>
+      </div>
+
+      <div  className="App-component">
+        <RenderizadoElementos/>
       </div>
       
     </div>
