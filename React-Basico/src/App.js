@@ -7,6 +7,7 @@ import States from "./components/state/States.js";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import {EventosES6, EventosES7, MasSobreEventos} from "./components/Eventos";
+import { Padre } from "./components/ComunicacionComponente";
 function App() {
 
   //example de propiedades
@@ -77,6 +78,11 @@ function App() {
         <EventosES7/>
         <MasSobreEventos/>
       </section>
+      
+      <div  className="App-component">
+        <Padre/>
+        
+      </div>
     </div>
   );
 }
