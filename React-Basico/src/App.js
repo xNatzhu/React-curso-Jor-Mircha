@@ -8,6 +8,7 @@ import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import {EventosES6, EventosES7, MasSobreEventos} from "./components/Eventos";
 import { Padre } from "./components/ComunicacionComponente";
+import CicloDeVida from "./components/CicloDeVida";
 function App() {
 
   //example de propiedades
@@ -81,6 +82,11 @@ function App() {
       
       <div  className="App-component">
         <Padre/>
+        
+      </div>
+
+      <div  className="App-component">
+        <CicloDeVida/>
         
       </div>
     </div>
