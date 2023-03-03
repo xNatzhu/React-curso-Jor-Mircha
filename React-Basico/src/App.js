@@ -9,6 +9,8 @@ import RenderizadoElementos from "./components/RenderizadoElementos";
 import {EventosES6, EventosES7, MasSobreEventos} from "./components/Eventos";
 import { Padre } from "./components/ComunicacionComponente";
 import CicloDeVida from "./components/CicloDeVida";
+import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
 function App() {
 
   //example de propiedades
@@ -88,6 +90,13 @@ function App() {
       <div  className="App-component">
         <CicloDeVida/>
         
+      </div>
+
+      <div  className="App-component">
+        <AjaxApis/>
+      </div>
+      <div  className="App-component">
+        <ContadorHooks/>
       </div>
     </div>
   );
